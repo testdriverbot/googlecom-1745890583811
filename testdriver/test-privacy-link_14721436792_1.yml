@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 681030920e064b4273992449
+steps:
+  - prompt: Scroll to the bottom and click the "Privacy" link.
+    commands:
+      - command: hover-text
+        text: Privacy
+        description: privacy link at the bottom of the Google homepage
+        action: click
+  - prompt: Assert that the Privacy page loads and displays relevant information.
+    commands:
+      - command: assert
+        expect: the Privacy page displays relevant information
