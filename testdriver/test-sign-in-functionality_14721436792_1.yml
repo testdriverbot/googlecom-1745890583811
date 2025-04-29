@@ -1,0 +1,30 @@
+version: 4.2.29
+session: 681030870e064b4273992443
+steps:
+  - prompt: Click the "Sign in" button.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: sign in button in the top right corner
+        action: click
+  - prompt: Enter valid credentials.
+    commands:
+      - command: hover-text
+        text: Email or phone
+        description: email or phone input field
+        action: click
+      - command: type
+        text: testuser@example.com
+      - command: press-keys
+        keys:
+          - tab
+      - command: type
+        text: password123
+  - prompt: Click "Submit."
+    commands:
+      - command: hover-text
+        text: Next
+        description: next button on the sign-in page
+        action: click
+  - prompt: Assert that the user is signed in successfully.
+    commands: []
