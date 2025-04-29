@@ -1,0 +1,20 @@
+version: 4.2.29
+session: 6810309a831a052014f01e80
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Type a query into the search bar.
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+      - command: type
+        text: example query
+  - prompt: Press "Enter."
+    commands:
+      - command: press-keys
+        keys:
+          - enter
