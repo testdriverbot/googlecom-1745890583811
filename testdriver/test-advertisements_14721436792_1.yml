@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 68103089831a052014f01e73
+steps:
+  - prompt: Observe the home page for any advertisements.
+    commands:
+      - command: hover-text
+        text: Advertising
+        description: link at the bottom of the Google homepage
+        action: click
+  - prompt: Assert that advertisements display correctly without errors.
+    commands:
+      - command: assert
+        expect: advertisements display correctly without errors
