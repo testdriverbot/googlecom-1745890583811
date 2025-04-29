@@ -1,0 +1,24 @@
+version: 4.2.29
+session: 6810309a831a052014f01e82
+steps:
+  - prompt: Click on the "Gmail" link.
+    commands:
+      - command: scroll
+        direction: up
+        method: keyboard
+        amount: 300
+      - command: press-keys
+        keys:
+          - control
+          - l
+      - command: type
+        text: www.google.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Click on the "Gmail" link.
+    commands:
+      - command: hover-text
+        text: Gmail
+        description: Gmail link in the top right corner of the Google homepage
+        action: click
